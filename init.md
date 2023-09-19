@@ -17,13 +17,15 @@ The first part of the lab solely focuses on the creation of the HTML for the web
 - Delete button
 - Task creation form  
 
+With this added, the first part of the lab is complete. Now there is a a navbar, a title, a proper tasklist and a create task button.
+
 ![Plain HTML Page](part1.png) 
 *End result of the HTML page* 
 
 
-The second part of the lab stylizes the HTML using CSS to make it look better. A small amount of Javascript is added to extract form data for task creation.
+The second part of the lab stylizes the HTML using CSS to make it look better. Here is the completed website:
 ![Stylized page](part2.png)
---Completed website--
+--Website with CSS--  
 *Changes Include:*  
 1. "Sort by date" and "Filter completed tasks" button are added.
 2. Checkboxes crossout tasks when enabled. 
@@ -31,6 +33,10 @@ The second part of the lab stylizes the HTML using CSS to make it look better. A
 4. Navigation bar and all buttons are colored 
 5. Background image is added
 6. Page is completely restructured
+
+A small amount of Javascript is added at the end to extract form data for task creation, so when a user inputs a new task and a date, it pops up with an alert verifying each attribute was collected.
+![Javascript Example](part3.png)
+
 
 
 ### *File Descriptions*
@@ -84,15 +90,31 @@ I fixed this issue by revising it to do this instead.
 }**    
 This selector makes it so when the task-done attribute "checked" is true, it specifically crosses out the task-description class.
 
-2. **Javascript isn't working on the document**  
+2. **Javascript isn't working on the the website**  
 This issue was primarily due to me misreading instructions. I forgot to link the Javascript file to the document. My solution was to simply link my HTML file to my javascript file using the style tag.
 
 
-3. Button icons aren't showing.
+3. **Button icons aren't showing.**  
+
+When I run my website on localhost using VScode's live server, the icons imported from google don't work correctly. However, I found that these icons do load on my actual AWS server and through docker. I don't understand the exact reason, but I believe internet connection doesn't work as intended through VScode's extension. What this taught me is to rely on docker for application testing rather than running a local live server through VScode.
 
 
 
 ## Conclusions
+
+- HTML and CSS fundamentals
+- HTML Classes and ID's
+- CSS Styling Hierarchies
+- Interactive Selectors
+- Adjacent Selectors
+- Importing Fonts & Icons
+- Extracting Data with Javascript
+
+## References
+https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator
+https://www.geeksforgeeks.org/html/
+https://www.geeksforgeeks.org/css/
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators
 
 
 
